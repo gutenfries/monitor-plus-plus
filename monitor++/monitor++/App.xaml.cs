@@ -1,4 +1,4 @@
-﻿using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
@@ -8,6 +8,7 @@ using Microsoft.UI.Xaml.Navigation;
 using Microsoft.UI.Xaml.Shapes;
 using System;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,6 +25,7 @@ namespace monitor__ {
 	/// Provides application-specific behavior to supplement the default Application class.
 	/// </summary>
 	public partial class App : Application {
+
 		/// <summary>
 		/// Initializes the singleton application object.  This is the first line of authored code
 		/// executed, and as such is the logical equivalent of main() or WinMain().

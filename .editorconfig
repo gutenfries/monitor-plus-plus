@@ -3,7 +3,7 @@
 root = true
 
 [*]
-print_width = 125
+print_width = 120
 indent_style = tab
 indent_size = 4
 tab_width = 4
@@ -16,6 +16,9 @@ spaces_around_operators = true
 spaces_around_brackets = outside
 indent_brace_style = K&R
 encoding = utf-8
+
+[*.xml, *.xaml]
+print_width = 100
 
 [*.ps1, *.psm1]
 end_of_line = crlf

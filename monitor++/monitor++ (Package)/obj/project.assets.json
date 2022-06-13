@@ -2,6 +2,18 @@
 	"version": 3,
 	"targets": {
 		"UAP,Version=v10.0.17763": {
+			"Hardware.Info/10.0.1": {
+				"type": "package",
+				"dependencies": {
+					"System.Management": "4.7.0"
+				},
+				"compile": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				}
+			},
 			"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 				"type": "package",
 				"build": {
@@ -31,12 +43,34 @@
 					}
 				}
 			},
+			"System.CodeDom/4.7.0": {
+				"type": "package",
+				"compile": {
+					"ref/netstandard2.0/System.CodeDom.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.CodeDom.dll": {}
+				}
+			},
+			"System.Management/4.7.0": {
+				"type": "package",
+				"dependencies": {
+					"System.CodeDom": "4.7.0"
+				},
+				"compile": {
+					"ref/netstandard2.0/System.Management.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.Management.dll": {}
+				}
+			},
 			"monitor++/1.0.0": {
 				"type": "project",
 				"framework": ".NETCoreApp,Version=v6.0",
 				"dependencies": {
-					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-					"Microsoft.WindowsAppSDK": "1.0.3"
+					"Hardware.Info": "10.0.1",
+					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.197",
+					"Microsoft.WindowsAppSDK": "1.1.0"
 				},
 				"compile": {
 					"bin/placeholder/monitor++.dll": {}
@@ -47,6 +81,18 @@
 			}
 		},
 		"UAP,Version=v10.0.17763/win10-arm": {
+			"Hardware.Info/10.0.1": {
+				"type": "package",
+				"dependencies": {
+					"System.Management": "4.7.0"
+				},
+				"compile": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				}
+			},
 			"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 				"type": "package",
 				"build": {
@@ -70,12 +116,34 @@
 					"buildTransitive/Microsoft.WindowsAppSDK.targets": {}
 				}
 			},
+			"System.CodeDom/4.7.0": {
+				"type": "package",
+				"compile": {
+					"ref/netstandard2.0/System.CodeDom.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.CodeDom.dll": {}
+				}
+			},
+			"System.Management/4.7.0": {
+				"type": "package",
+				"dependencies": {
+					"System.CodeDom": "4.7.0"
+				},
+				"compile": {
+					"ref/netstandard2.0/System.Management.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.Management.dll": {}
+				}
+			},
 			"monitor++/1.0.0": {
 				"type": "project",
 				"framework": ".NETCoreApp,Version=v6.0",
 				"dependencies": {
-					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-					"Microsoft.WindowsAppSDK": "1.0.3"
+					"Hardware.Info": "10.0.1",
+					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.197",
+					"Microsoft.WindowsAppSDK": "1.1.0"
 				},
 				"compile": {
 					"bin/placeholder/monitor++.dll": {}
@@ -86,6 +154,18 @@
 			}
 		},
 		"UAP,Version=v10.0.17763/win10-arm-aot": {
+			"Hardware.Info/10.0.1": {
+				"type": "package",
+				"dependencies": {
+					"System.Management": "4.7.0"
+				},
+				"compile": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				}
+			},
 			"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 				"type": "package",
 				"build": {
@@ -109,12 +189,34 @@
 					"buildTransitive/Microsoft.WindowsAppSDK.targets": {}
 				}
 			},
+			"System.CodeDom/4.7.0": {
+				"type": "package",
+				"compile": {
+					"ref/netstandard2.0/System.CodeDom.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.CodeDom.dll": {}
+				}
+			},
+			"System.Management/4.7.0": {
+				"type": "package",
+				"dependencies": {
+					"System.CodeDom": "4.7.0"
+				},
+				"compile": {
+					"ref/netstandard2.0/System.Management.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.Management.dll": {}
+				}
+			},
 			"monitor++/1.0.0": {
 				"type": "project",
 				"framework": ".NETCoreApp,Version=v6.0",
 				"dependencies": {
-					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-					"Microsoft.WindowsAppSDK": "1.0.3"
+					"Hardware.Info": "10.0.1",
+					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.197",
+					"Microsoft.WindowsAppSDK": "1.1.0"
 				},
 				"compile": {
 					"bin/placeholder/monitor++.dll": {}
@@ -125,6 +227,18 @@
 			}
 		},
 		"UAP,Version=v10.0.17763/win10-arm64-aot": {
+			"Hardware.Info/10.0.1": {
+				"type": "package",
+				"dependencies": {
+					"System.Management": "4.7.0"
+				},
+				"compile": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				}
+			},
 			"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 				"type": "package",
 				"build": {
@@ -151,12 +265,34 @@
 					"buildTransitive/Microsoft.WindowsAppSDK.targets": {}
 				}
 			},
+			"System.CodeDom/4.7.0": {
+				"type": "package",
+				"compile": {
+					"ref/netstandard2.0/System.CodeDom.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.CodeDom.dll": {}
+				}
+			},
+			"System.Management/4.7.0": {
+				"type": "package",
+				"dependencies": {
+					"System.CodeDom": "4.7.0"
+				},
+				"compile": {
+					"ref/netstandard2.0/System.Management.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.Management.dll": {}
+				}
+			},
 			"monitor++/1.0.0": {
 				"type": "project",
 				"framework": ".NETCoreApp,Version=v6.0",
 				"dependencies": {
-					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-					"Microsoft.WindowsAppSDK": "1.0.3"
+					"Hardware.Info": "10.0.1",
+					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.197",
+					"Microsoft.WindowsAppSDK": "1.1.0"
 				},
 				"compile": {
 					"bin/placeholder/monitor++.dll": {}
@@ -167,6 +303,18 @@
 			}
 		},
 		"UAP,Version=v10.0.17763/win10-x64": {
+			"Hardware.Info/10.0.1": {
+				"type": "package",
+				"dependencies": {
+					"System.Management": "4.7.0"
+				},
+				"compile": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				}
+			},
 			"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 				"type": "package",
 				"build": {
@@ -193,12 +341,34 @@
 					"buildTransitive/Microsoft.WindowsAppSDK.targets": {}
 				}
 			},
+			"System.CodeDom/4.7.0": {
+				"type": "package",
+				"compile": {
+					"ref/netstandard2.0/System.CodeDom.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.CodeDom.dll": {}
+				}
+			},
+			"System.Management/4.7.0": {
+				"type": "package",
+				"dependencies": {
+					"System.CodeDom": "4.7.0"
+				},
+				"compile": {
+					"ref/netstandard2.0/System.Management.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.Management.dll": {}
+				}
+			},
 			"monitor++/1.0.0": {
 				"type": "project",
 				"framework": ".NETCoreApp,Version=v6.0",
 				"dependencies": {
-					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-					"Microsoft.WindowsAppSDK": "1.0.3"
+					"Hardware.Info": "10.0.1",
+					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.197",
+					"Microsoft.WindowsAppSDK": "1.1.0"
 				},
 				"compile": {
 					"bin/placeholder/monitor++.dll": {}
@@ -209,6 +379,18 @@
 			}
 		},
 		"UAP,Version=v10.0.17763/win10-x64-aot": {
+			"Hardware.Info/10.0.1": {
+				"type": "package",
+				"dependencies": {
+					"System.Management": "4.7.0"
+				},
+				"compile": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				}
+			},
 			"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 				"type": "package",
 				"build": {
@@ -235,12 +417,34 @@
 					"buildTransitive/Microsoft.WindowsAppSDK.targets": {}
 				}
 			},
+			"System.CodeDom/4.7.0": {
+				"type": "package",
+				"compile": {
+					"ref/netstandard2.0/System.CodeDom.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.CodeDom.dll": {}
+				}
+			},
+			"System.Management/4.7.0": {
+				"type": "package",
+				"dependencies": {
+					"System.CodeDom": "4.7.0"
+				},
+				"compile": {
+					"ref/netstandard2.0/System.Management.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.Management.dll": {}
+				}
+			},
 			"monitor++/1.0.0": {
 				"type": "project",
 				"framework": ".NETCoreApp,Version=v6.0",
 				"dependencies": {
-					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-					"Microsoft.WindowsAppSDK": "1.0.3"
+					"Hardware.Info": "10.0.1",
+					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.197",
+					"Microsoft.WindowsAppSDK": "1.1.0"
 				},
 				"compile": {
 					"bin/placeholder/monitor++.dll": {}
@@ -251,6 +455,18 @@
 			}
 		},
 		"UAP,Version=v10.0.17763/win10-x86": {
+			"Hardware.Info/10.0.1": {
+				"type": "package",
+				"dependencies": {
+					"System.Management": "4.7.0"
+				},
+				"compile": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				}
+			},
 			"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 				"type": "package",
 				"build": {
@@ -277,12 +493,34 @@
 					"buildTransitive/Microsoft.WindowsAppSDK.targets": {}
 				}
 			},
+			"System.CodeDom/4.7.0": {
+				"type": "package",
+				"compile": {
+					"ref/netstandard2.0/System.CodeDom.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.CodeDom.dll": {}
+				}
+			},
+			"System.Management/4.7.0": {
+				"type": "package",
+				"dependencies": {
+					"System.CodeDom": "4.7.0"
+				},
+				"compile": {
+					"ref/netstandard2.0/System.Management.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.Management.dll": {}
+				}
+			},
 			"monitor++/1.0.0": {
 				"type": "project",
 				"framework": ".NETCoreApp,Version=v6.0",
 				"dependencies": {
-					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-					"Microsoft.WindowsAppSDK": "1.0.3"
+					"Hardware.Info": "10.0.1",
+					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.197",
+					"Microsoft.WindowsAppSDK": "1.1.0"
 				},
 				"compile": {
 					"bin/placeholder/monitor++.dll": {}
@@ -293,6 +531,18 @@
 			}
 		},
 		"UAP,Version=v10.0.17763/win10-x86-aot": {
+			"Hardware.Info/10.0.1": {
+				"type": "package",
+				"dependencies": {
+					"System.Management": "4.7.0"
+				},
+				"compile": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/Hardware.Info.dll": {}
+				}
+			},
 			"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 				"type": "package",
 				"build": {
@@ -319,12 +569,34 @@
 					"buildTransitive/Microsoft.WindowsAppSDK.targets": {}
 				}
 			},
+			"System.CodeDom/4.7.0": {
+				"type": "package",
+				"compile": {
+					"ref/netstandard2.0/System.CodeDom.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.CodeDom.dll": {}
+				}
+			},
+			"System.Management/4.7.0": {
+				"type": "package",
+				"dependencies": {
+					"System.CodeDom": "4.7.0"
+				},
+				"compile": {
+					"ref/netstandard2.0/System.Management.dll": {}
+				},
+				"runtime": {
+					"lib/netstandard2.0/System.Management.dll": {}
+				}
+			},
 			"monitor++/1.0.0": {
 				"type": "project",
 				"framework": ".NETCoreApp,Version=v6.0",
 				"dependencies": {
-					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-					"Microsoft.WindowsAppSDK": "1.0.3"
+					"Hardware.Info": "10.0.1",
+					"Microsoft.Windows.SDK.BuildTools": "10.0.22000.197",
+					"Microsoft.WindowsAppSDK": "1.1.0"
 				},
 				"compile": {
 					"bin/placeholder/monitor++.dll": {}
@@ -336,6 +608,18 @@
 		}
 	},
 	"libraries": {
+		"Hardware.Info/10.0.1": {
+			"sha512": "VKWvXmnanADQHkNSgHUzfTKSzbD2AoRDuuka8R+Bj+8IT+vD6QTiSCvwSkstDpZF+645dhnLhPHMMEaMJGQeqA==",
+			"type": "package",
+			"path": "hardware.info/10.0.1",
+			"files": [
+				".nupkg.metadata",
+				".signature.p7s",
+				"hardware.info.10.0.1.nupkg.sha512",
+				"hardware.info.nuspec",
+				"lib/netstandard2.0/Hardware.Info.dll"
+			]
+		},
 		"Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
 			"sha512": "4L0P3zqut466SIqT3VBeLTNUQTxCBDOrTRymRuROCRJKazcK7ibLz9yAO1nKWRt50ttCj39oAa2Iuz9ZTDmLlg==",
 			"type": "package",
@@ -1062,6 +1346,53 @@
 				"tools/x86/GenXbf.dll"
 			]
 		},
+		"System.CodeDom/4.7.0": {
+			"sha512": "Hs9pw/kmvH3lXaZ1LFKj3pLQsiGfj2xo3sxSzwiLlRL6UcMZUTeCfoJ9Udalvn3yq5dLlPEZzYegrTQ1/LhPOQ==",
+			"type": "package",
+			"path": "system.codedom/4.7.0",
+			"files": [
+				".nupkg.metadata",
+				".signature.p7s",
+				"LICENSE.TXT",
+				"THIRD-PARTY-NOTICES.TXT",
+				"lib/net461/System.CodeDom.dll",
+				"lib/net461/System.CodeDom.xml",
+				"lib/netstandard2.0/System.CodeDom.dll",
+				"lib/netstandard2.0/System.CodeDom.xml",
+				"ref/net461/System.CodeDom.dll",
+				"ref/net461/System.CodeDom.xml",
+				"ref/netstandard2.0/System.CodeDom.dll",
+				"ref/netstandard2.0/System.CodeDom.xml",
+				"system.codedom.4.7.0.nupkg.sha512",
+				"system.codedom.nuspec",
+				"useSharedDesignerContext.txt",
+				"version.txt"
+			]
+		},
+		"System.Management/4.7.0": {
+			"sha512": "IY+uuGhgzWiCg21i8IvQeY/Z7m1tX8VuPF+ludfn7iTCaccTtJo5HkjZbBEL8kbBubKhAKKtNXr7uMtmAc28Pw==",
+			"type": "package",
+			"path": "system.management/4.7.0",
+			"files": [
+				".nupkg.metadata",
+				".signature.p7s",
+				"LICENSE.TXT",
+				"THIRD-PARTY-NOTICES.TXT",
+				"lib/net45/_._",
+				"lib/netstandard2.0/System.Management.dll",
+				"lib/netstandard2.0/System.Management.xml",
+				"ref/net45/_._",
+				"ref/netstandard2.0/System.Management.dll",
+				"ref/netstandard2.0/System.Management.xml",
+				"runtimes/win/lib/net45/_._",
+				"runtimes/win/lib/netcoreapp2.0/System.Management.dll",
+				"runtimes/win/lib/netcoreapp2.0/System.Management.xml",
+				"system.management.4.7.0.nupkg.sha512",
+				"system.management.nuspec",
+				"useSharedDesignerContext.txt",
+				"version.txt"
+			]
+		},
 		"monitor++/1.0.0": {
 			"type": "project",
 			"path": "../monitor++/monitor++.csproj",
@@ -1166,5 +1497,41 @@
 				"#import": []
 			}
 		}
-	}
+	},
+	"logs": [
+		{
+			"code": "NU1605",
+			"level": "Warning",
+			"warningLevel": 1,
+			"message": "Detected package downgrade: Microsoft.Windows.SDK.BuildTools from 10.0.22000.197 to 10.0.22000.194. Reference the package directly from the project to select a different version. \r\n monitor++ (Package) -> monitor++ -> Microsoft.Windows.SDK.BuildTools (>= 10.0.22000.197) \r\n monitor++ (Package) -> Microsoft.Windows.SDK.BuildTools (= 10.0.22000.194)",
+			"libraryId": "Microsoft.Windows.SDK.BuildTools",
+			"targetGraphs": [
+				"UAP,Version=v10.0.17763",
+				"UAP,Version=v10.0.17763/win10-arm",
+				"UAP,Version=v10.0.17763/win10-arm-aot",
+				"UAP,Version=v10.0.17763/win10-arm64-aot",
+				"UAP,Version=v10.0.17763/win10-x64",
+				"UAP,Version=v10.0.17763/win10-x64-aot",
+				"UAP,Version=v10.0.17763/win10-x86",
+				"UAP,Version=v10.0.17763/win10-x86-aot"
+			]
+		},
+		{
+			"code": "NU1605",
+			"level": "Warning",
+			"warningLevel": 1,
+			"message": "Detected package downgrade: Microsoft.WindowsAppSDK from 1.1.0 to 1.0.3. Reference the package directly from the project to select a different version. \r\n monitor++ (Package) -> monitor++ -> Microsoft.WindowsAppSDK (>= 1.1.0) \r\n monitor++ (Package) -> Microsoft.WindowsAppSDK (= 1.0.3)",
+			"libraryId": "Microsoft.WindowsAppSDK",
+			"targetGraphs": [
+				"UAP,Version=v10.0.17763",
+				"UAP,Version=v10.0.17763/win10-arm",
+				"UAP,Version=v10.0.17763/win10-arm-aot",
+				"UAP,Version=v10.0.17763/win10-arm64-aot",
+				"UAP,Version=v10.0.17763/win10-x64",
+				"UAP,Version=v10.0.17763/win10-x64-aot",
+				"UAP,Version=v10.0.17763/win10-x86",
+				"UAP,Version=v10.0.17763/win10-x86-aot"
+			]
+		}
+	]
 }
